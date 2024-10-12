@@ -1,11 +1,11 @@
 ### 2024 BIG DATA HACKATHON PROPOSAL FORM
 
-#### Team Number: `YOUR TEAM NUMBER HERE`  
+#### Team Number: `Team 134`  
 
-#### Team Name: `YOUR TEAM NAME HERE`    
+#### Team Name: `The Winning Team`    
   
 #### Your teamâ€™s hackathon idea in One sentence:
-##### `YOUR ONE SENTENCE HERE`
+##### `An application to help users de-stress in a high-stress environment.`
 
 
 #### A visual
@@ -26,7 +26,7 @@
 > As a potential new customer, how can we leverage the mobile app to help new patients better understand what services are available to them?
 - [ ] Managing my health
 > Itâ€™s easy to get overwhelmed by all the tasks patients often have to do to maintain their health, how can we make managing health more enjoyable?
-- [ ] Addressing mental health challenges
+- [X] Addressing mental health challenges
 > Mental health challenges may be difficult to identify and have a broad impact on health, how can we help clinicians be more in tune with patients mental health needs?
 
 #### Optional Questions. `TEAMS CAN SELECT ONE ADDITIONAL OPTIONAL QUESTION (insert X in [ ])`
