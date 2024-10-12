@@ -9,6 +9,8 @@
 
 
 #### A visual
+<img width="358" alt="PEAKLogo" src="https://github.com/user-attachments/assets/e7a08912-70f2-4c0e-992b-332e7dc86db3">
+
 ![bigdatahackathon4sd](https://github.com/BigDataForSanDiego/bigdataforsandiego.github.io/blob/main/templates/img/bigdatahackathon_sd_2024.png?raw=true "Big Data Hackathon for San Diego 2024")
 <img height="10%" width="50%" alt="HDMA" src="https://github.com/BigDataForSanDiego/bigdataforsandiego.github.io/blob/main/templates/img/hdma2.png?raw=true"> 
 
