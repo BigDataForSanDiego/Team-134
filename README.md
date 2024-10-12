@@ -14,7 +14,7 @@
 
 ##### UI for application
 <img width="260" alt="PEAKassessmentquiz" src="https://github.com/user-attachments/assets/653c7982-3e1a-4fbf-ab14-c9fc14dd985e">
-<img width="263" alt="PEAKresults" src="https://github.com/user-attachments/assets/868016b6-817e-4b14-95f0-c3d5b88fe831">
+<img width="265" alt="PEAKresults" src="https://github.com/user-attachments/assets/3322726c-c12f-4e7a-8c1c-967b7999eb0f">
 <img width="259" alt="PEAKOnlineResources" src="https://github.com/user-attachments/assets/9c38696a-5eb2-4a49-8e0c-cab555e97d02"> 
 
 <!--
