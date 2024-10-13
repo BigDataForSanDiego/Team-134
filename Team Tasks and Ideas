@@ -1,0 +1,42 @@
+Things that need to get done:
+
+Presentation data collection and charts
+  -It looks like they want us to use their already-collected datase
+  -Could we look for demographics that display ages 18-60 (working class), physicians in-training, 
+   people struggling with healthcare, people with mental health issues (rare & common), people who have access to technology,
+   and people in-need of using technology to their advantage?
+  -It is ok if we don't find all the ones on this list. We'll figure itout as we go.
+  -For the last 2 on the list, I want to use it to justify why we are using technology instead of something else.
+
+Research:
+  -Gamer instincts. What makes people want to continue playing games? What makes a game satisfying? 
+   How can we use that to advantage to encourage mental health care?
+
+App/website needs:
+  -Pomodoro timer 
+    -"How much time do you have?"
+    -Options for 5, 10, 15 minutes or user input
+        -If user input, check for ways this option could break when debugging
+  
+    -Ideas:
+        -Tasks could be levels
+        -Needs 2 modes. One for ascending to your peak (visualized by going up a mountain trail) 
+         and one going down from your peak amount of stress (visualized by going down the mountain)
+          -I would like to acknowledge some quiet activities for bad timings (like needing to scream when the household is sleeping) 
+          -Would it benefit the user if time of day is reflected in the app/wesite in terms of changes in the environment?
+        
+        -ASMR for calming effect?
+            -For this, needs to have good sound equipment and be able to test it on many different types of speakers
+        -Tasks for in-game garden
+        -Being able to track mental health days for user's and doctor's reference
+            -An option to be able to send progress to your doctor
+            -We want the users to be encouraged to use this app at least once a day
+        -Importing resources
+            -Need to have a disclaimer because we are not experts (yet) on the effectiveness 
+             of these exercises and are not liable for anything that happens to the user.
+            -Sounds a bit harsh, but lets be humans with morals when helping the user navigate their challenges
+        -Translating and teaching mental health techniques
+        -How to we want to track whether a user has completed a task or not?
+
+        -Turning mental health techniques into gamefied activities
+            -This might be a long list 
