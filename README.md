@@ -47,5 +47,5 @@
 
 #### Team Coordinator GitHub Username: `randomkimhere`
 
-#### Team Members `Kim Linh Vu (randomkimhere), Kim Chau Vu (doesn't have one yet), Wyatt Dolan (WyattDolan3)`
+#### Team Members `Kim Linh Vu (randomkimhere), Kim Chau Vu (KimChauVu), Wyatt Dolan (WyattDolan3)`
 
