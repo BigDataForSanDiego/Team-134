@@ -1,65 +1,66 @@
-import Image from "next/image";
+"use client"
 
-export default function Home() {
+import { useState } from "react"
+import { MapView } from "@/components/map-view"
+import { ProfileView } from "@/components/profile-view"
+import { MedicalHistory } from "@/components/medical-history"
+import { AssistanceHistory } from "@/components/assistance-history"
+import { NewsView } from "@/components/news-view"
+import { Map, User, Heart, Package, Newspaper } from "lucide-react"
+
+type View = "map" | "profile" | "medical" | "assistance" | "news"
+
+export default function HomePage() {
+  const [currentView, setCurrentView] = useState<View>("map")
+
+  const views = {
+    map: { component: MapView, icon: Map, label: "Mapa" },
+    profile: { component: ProfileView, icon: User, label: "Perfil" },
+    medical: { component: MedicalHistory, icon: Heart, label: "Médico" },
+    assistance: { component: AssistanceHistory, icon: Package, label: "Ayudas" },
+    news: { component: NewsView, icon: Newspaper, label: "Noticias" },
+  }
+
+  const CurrentComponent = views[currentView].component
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="flex flex-col h-screen bg-background">
+      <header className="bg-primary text-primary-foreground p-3 md:p-4 shadow-lg">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-xl md:text-2xl font-bold text-balance">OpenHealth</h1>
+          <p className="text-xs md:text-sm opacity-90 mt-1">Encuentra ayuda cerca de ti</p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </header>
+
+      {/* Main Content */}
+      <main className="flex-1 overflow-y-auto pb-20 md:pb-24">
+        <div className="max-w-4xl mx-auto p-3 md:p-4">
+          <CurrentComponent />
         </div>
       </main>
+
+      <nav className="fixed bottom-0 left-0 right-0 bg-card border-t border-border shadow-lg safe-area-inset-bottom">
+        <div className="max-w-4xl mx-auto flex items-center justify-around p-1.5 md:p-2">
+          {(Object.keys(views) as View[]).map((view) => {
+            const { icon: Icon, label } = views[view]
+            const isActive = currentView === view
+            return (
+              <button
+                key={view}
+                onClick={() => setCurrentView(view)}
+                className={`flex flex-col items-center gap-0.5 md:gap-1 p-2 md:p-3 rounded-lg transition-all min-w-0 ${
+                  isActive
+                    ? "bg-primary text-primary-foreground"
+                    : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                }`}
+              >
+                <Icon className={`w-5 h-5 md:w-6 md:h-6 ${isActive ? "scale-110" : ""}`} />
+                <span className="text-[10px] md:text-xs font-medium truncate max-w-full">{label}</span>
+              </button>
+            )
+          })}
+        </div>
+      </nav>
     </div>
-  );
+  )
 }
