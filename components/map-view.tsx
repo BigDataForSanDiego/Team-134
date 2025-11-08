@@ -239,7 +239,7 @@ export function MapView() {
   // Handle zoom
   const handleWheel = (e: React.WheelEvent<HTMLCanvasElement>) => {
     e.preventDefault()
-    const delta = e.deltaY > 0 ? -1 : 1
+    const delta = e.deltaY > 0 ? -.8 : .8
     setMapState((prev) => ({
       ...prev,
       zoom: Math.max(10, Math.min(18, prev.zoom + delta)),
