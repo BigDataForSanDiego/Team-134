@@ -88,7 +88,7 @@ export function ProfileView() {
               value={profile.name}
               onChange={(e) => setProfile({ ...profile, name: e.target.value })}
               disabled={!isEditing}
-              placeholder="Tu nombre"
+              placeholder="your name"
               className="text-base h-11 md:h-12"
             />
           </div>
@@ -138,14 +138,14 @@ export function ProfileView() {
 
           <div className="space-y-2">
             <Label htmlFor="notes" className="text-sm md:text-base">
-              Notas Adicionales
+              Additional notes
             </Label>
             <Textarea
               id="notes"
               value={profile.notes || ""}
               onChange={(e) => setProfile({ ...profile, notes: e.target.value })}
               disabled={!isEditing}
-              placeholder="Alergias, medicamentos, información importante..."
+              placeholder="Allergies, medications, important information..."
               className="text-base min-h-24"
             />
           </div>
@@ -153,19 +153,19 @@ export function ProfileView() {
       </Card>
 
       <Card className="p-4 md:p-6 bg-accent/10 border-accent">
-        <h3 className="font-bold text-base md:text-lg mb-3 text-foreground">Información Importante</h3>
+        <h3 className="font-bold text-base md:text-lg mb-3 text-foreground">Imprtant information</h3>
         <ul className="space-y-2 text-sm text-muted-foreground">
           <li className="flex items-start gap-2">
             <span className="text-accent font-bold">•</span>
-            Tu información se guarda solo en tu dispositivo
+            Your information is saved only on your device
           </li>
           <li className="flex items-start gap-2">
             <span className="text-accent font-bold">•</span>
-            Mantén actualizado tu contacto de emergencia
+            Keep your emergency contact updated
           </li>
           <li className="flex items-start gap-2">
             <span className="text-accent font-bold">•</span>
-            Esta información puede ayudar en caso de emergencia médica
+           This information can help in case of a medical emergency
           </li>
         </ul>
       </Card>
