@@ -26,15 +26,15 @@ export default function HomePage() {
   return (
     <div className="flex flex-col h-screen bg-background">
       <header className="bg-primary text-primary-foreground p-3 md:p-4 shadow-lg">
-        <div className="max-w-4xl mx-auto">
+        <div className="mx-auto">
           <h1 className="text-xl md:text-2xl font-bold text-balance">OpenHealth</h1>
-          <p className="text-xs md:text-sm opacity-90 mt-1">Encuentra ayuda cerca de ti</p>
+          <p className="text-xs md:text-sm opacity-90 mt-1">Find help near you</p>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 overflow-y-auto pb-20 md:pb-24">
-        <div className="max-w-4xl mx-auto p-3 md:p-4">
+      <main className="flex-1 overflow-y-auto pb-0 md:pb-0">
+        <div className="w-svw  mx-auto p-0 md:p-0">
           <CurrentComponent />
         </div>
       </main>

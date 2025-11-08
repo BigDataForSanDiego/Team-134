@@ -303,81 +303,78 @@ export function MapView() {
         )}
       </Button>
 
-      <div
-        className={`absolute top-0 right-0 h-full w-full md:w-96 bg-background/98 backdrop-blur-sm shadow-2xl z-10 transition-transform duration-300 ease-in-out ${
-          isSidebarOpen ? "translate-x-0" : "translate-x-full"
-        } overflow-y-auto`}
-      >
-        <div className="p-4 space-y-4 pb-6">
-          <div className="flex items-center justify-between sticky top-0 bg-background/95 backdrop-blur-sm pb-3 border-b">
-            <div>
-              <h2 className="font-bold text-xl text-foreground">Refugios Disponibles</h2>
-              <p className="text-sm text-muted-foreground">{mockShelters.length} ubicaciones</p>
+      {isSidebarOpen && (
+        <aside className="absolute top-4 right-4 w-full md:w-96 bg-background/95 backdrop-blur-sm shadow-2xl z-10 rounded-xl overflow-y-auto max-h-[80vh]">
+          <div className="p-4 space-y-4 pb-6">
+            <div className="flex items-center justify-between top-0 bg-background/95 backdrop-blur-sm pb-3 border-b">
+              <div>
+                <h2 className="font-bold text-xl text-foreground">Refugios Disponibles</h2>
+                <p className="text-sm text-muted-foreground">{mockShelters.length} ubicaciones</p>
+              </div>
+              <Button onClick={() => setIsSidebarOpen(false)} variant="ghost" size="icon" className="md:hidden">
+                <X className="w-5 h-5" />
+              </Button>
             </div>
-            <Button onClick={() => setIsSidebarOpen(false)} variant="ghost" size="icon" className="md:hidden">
-              <X className="w-5 h-5" />
-            </Button>
-          </div>
 
-          <div className="space-y-3">
-            {mockShelters.map((shelter) => (
-              <Card
-                key={shelter.id}
-                className={`p-4 cursor-pointer transition-all hover:shadow-md hover:border-primary/50 ${
-                  selectedShelter?.id === shelter.id ? "ring-2 ring-primary border-primary bg-primary/5" : ""
-                }`}
-                onClick={() => {
-                  setSelectedShelter(shelter)
-                  setMapState({
-                    centerLat: shelter.lat,
-                    centerLng: shelter.lng,
-                    zoom: Math.max(mapState.zoom, 15),
-                  })
-                  // Close sidebar on mobile after selection
-                  if (window.innerWidth < 768) {
-                    setIsSidebarOpen(false)
-                  }
-                }}
-              >
-                <div className="space-y-2">
-                  <div className="flex items-start justify-between gap-2">
-                    <h3 className="font-semibold text-base text-foreground leading-tight">{shelter.name}</h3>
-                    <Badge
-                      variant={
-                        shelter.availableBeds > 10 ? "default" : shelter.availableBeds > 0 ? "secondary" : "destructive"
-                      }
-                      className="shrink-0"
-                    >
-                      <Bed className="w-3 h-3 mr-1" />
-                      {shelter.availableBeds}
-                    </Badge>
-                  </div>
-                  <p className="text-xs text-muted-foreground flex items-start gap-1">
-                    <MapPin className="w-3 h-3 mt-0.5 shrink-0" />
-                    <span className="line-clamp-2">{shelter.address}</span>
-                  </p>
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <Clock className="w-3 h-3" />
-                    {shelter.hours}
-                  </div>
-                  <div className="flex flex-wrap gap-1">
-                    {shelter.services.slice(0, 3).map((service) => (
-                      <Badge key={service} variant="outline" className="text-xs">
-                        {service}
+            <div className="space-y-3">
+              {mockShelters.map((shelter) => (
+                <Card
+                  key={shelter.id}
+                  className={`p-4 cursor-pointer transition-all hover:shadow-md hover:border-primary/50 ${
+                    selectedShelter?.id === shelter.id ? "ring-2 ring-primary border-primary bg-primary/5" : ""
+                  }`}
+                  onClick={() => {
+                    setSelectedShelter(shelter)
+                    setMapState({
+                      centerLat: shelter.lat,
+                      centerLng: shelter.lng,
+                      zoom: Math.max(mapState.zoom, 15),
+                    })
+                    if (window.innerWidth < 768) {
+                      setIsSidebarOpen(false)
+                    }
+                  }}
+                >
+                  <div className="space-y-2">
+                    <div className="flex items-start justify-between gap-2">
+                      <h3 className="font-semibold text-base text-foreground leading-tight">{shelter.name}</h3>
+                      <Badge
+                        variant={
+                          shelter.availableBeds > 10 ? "default" : shelter.availableBeds > 0 ? "secondary" : "destructive"
+                        }
+                        className="shrink-0"
+                      >
+                        <Bed className="w-3 h-3 mr-1" />
+                        {shelter.availableBeds}
                       </Badge>
-                    ))}
-                    {shelter.services.length > 3 && (
-                      <Badge variant="outline" className="text-xs">
-                        +{shelter.services.length - 3}
-                      </Badge>
-                    )}
+                    </div>
+                    <p className="text-xs text-muted-foreground flex items-start gap-1">
+                      <MapPin className="w-3 h-3 mt-0.5 shrink-0" />
+                      <span className="line-clamp-2">{shelter.address}</span>
+                    </p>
+                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                      <Clock className="w-3 h-3" />
+                      {shelter.hours}
+                    </div>
+                    <div className="flex flex-wrap gap-1">
+                      {shelter.services.slice(0, 3).map((service) => (
+                        <Badge key={service} variant="outline" className="text-xs">
+                          {service}
+                        </Badge>
+                      ))}
+                      {shelter.services.length > 3 && (
+                        <Badge variant="outline" className="text-xs">
+                          +{shelter.services.length - 3}
+                        </Badge>
+                      )}
+                    </div>
                   </div>
-                </div>
-              </Card>
-            ))}
+                </Card>
+              ))}
+            </div>
           </div>
-        </div>
-      </div>
+        </aside>
+      )}
 
       {selectedShelter && (
         <div className="absolute bottom-4 left-4 right-4 md:left-4 md:right-auto md:max-w-md z-30">
