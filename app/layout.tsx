@@ -8,9 +8,9 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "OpenHealth - Encuentra Ayuda",
-  description: "Aplicación para personas sin hogar para encontrar refugios, comida y servicios de ayuda",
-  generator: "v0.app",
+  title: "OpenHelp - Don't you know where to find resources?",
+  description: "A website-app to provide support to homeless in the united states.",
+  generator: "Hackaton SDSU 20205",
 }
 
 export default function RootLayout({

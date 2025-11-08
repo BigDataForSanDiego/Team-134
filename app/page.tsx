@@ -27,8 +27,8 @@ export default function HomePage() {
     <div className="flex flex-col h-screen bg-background">
       <header className="bg-primary text-primary-foreground p-3 md:p-4 shadow-lg">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-xl md:text-2xl font-bold text-balance">OpenHealth</h1>
-          <p className="text-xs md:text-sm opacity-90 mt-1">Encuentra ayuda cerca de ti</p>
+          <h1 className="text-xl md:text-2xl font-bold text-balance">OpenHelp</h1>
+          <p className="text-xs md:text-sm opacity-90 mt-1">Find help</p>
         </div>
       </header>
 
