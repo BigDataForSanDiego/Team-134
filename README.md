@@ -1,17 +1,26 @@
+# OpenHealth
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Requisitos
+
+- Node.js >= 18.0.0
+- npm >= 8.0.0
+
+**⚠️ IMPORTANTE:** Este proyecto usa **npm** como gestor de paquetes. No uses `yarn`, `pnpm` o `bun`.
 
 ## Getting Started
 
-First, run the development server:
+Primero, instala las dependencias:
+
+```bash
+npm install
+```
+
+Luego, ejecuta el servidor de desarrollo:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
