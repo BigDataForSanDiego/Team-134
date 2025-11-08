@@ -41,8 +41,8 @@ export function ProfileView() {
               <User className="w-7 h-7 md:w-8 md:h-8 text-primary" />
             </div>
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-foreground">Mi Perfil</h2>
-              <p className="text-xs md:text-sm text-muted-foreground">Información personal</p>
+              <h2 className="text-xl md:text-2xl font-bold text-foreground">Profile</h2>
+              <p className="text-xs md:text-sm text-muted-foreground">Personal Information</p>
             </div>
           </div>
           <Button
@@ -66,14 +66,14 @@ export function ProfileView() {
             <div className="flex items-start gap-3">
               <IdCard className="w-6 h-6 text-primary shrink-0 mt-1" />
               <div className="flex-1">
-                <h3 className="font-bold text-base text-foreground mb-2">Registro de Usuario</h3>
+                <h3 className="font-bold text-base text-foreground mb-2">User form</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Tu perfil está registrado localmente en este dispositivo. Esta información te ayudará a acceder a
-                  servicios de ayuda más rápidamente.
+                  Your profile is registered locally on this device. This information will help you access
+                  help services faster.
                 </p>
                 <div className="flex items-center gap-2 text-xs text-muted-foreground">
                   <div className="w-2 h-2 rounded-full bg-green-500"></div>
-                  <span>Perfil activo desde {new Date().toLocaleDateString("es-ES")}</span>
+                  <span>Active profile since {new Date().toLocaleDateString("es-ES")}</span>
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@ export function ProfileView() {
 
           <div className="space-y-2">
             <Label htmlFor="name" className="text-sm md:text-base">
-              Nombre Completo
+              Full name
             </Label>
             <Input
               id="name"
@@ -95,7 +95,7 @@ export function ProfileView() {
 
           <div className="space-y-2">
             <Label htmlFor="dob" className="text-sm md:text-base">
-              Fecha de Nacimiento
+              date of birth
             </Label>
             <Input
               id="dob"
@@ -109,7 +109,7 @@ export function ProfileView() {
 
           <div className="space-y-2">
             <Label htmlFor="emergency" className="text-sm md:text-base">
-              Contacto de Emergencia
+             Emergency contact
             </Label>
             <Input
               id="emergency"
@@ -123,7 +123,7 @@ export function ProfileView() {
 
           <div className="space-y-2">
             <Label htmlFor="emergencyPhone" className="text-sm md:text-base">
-              Teléfono de Emergencia
+             Phone Emergency
             </Label>
             <Input
               id="emergencyPhone"

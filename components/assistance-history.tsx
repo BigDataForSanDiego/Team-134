@@ -16,11 +16,11 @@ const typeIcons = {
 }
 
 const typeLabels = {
-  food: "Comida",
-  shelter: "Refugio",
-  medical: "Médico",
-  clothing: "Ropa",
-  other: "Otro",
+  food: "food",
+  shelter: "shelter",
+  medical: "medical",
+  clothing: "clothing",
+  other: "other",
 }
 
 interface HelpEvent {
@@ -36,30 +36,30 @@ interface HelpEvent {
 const upcomingEvents: HelpEvent[] = [
   {
     id: "1",
-    title: "Distribución de Comida Caliente",
+    title: "Hot Food Distribution",
     date: "2025-01-25",
     time: "12:00 PM - 2:00 PM",
-    location: "Centro Comunitario Downtown",
+    location: "Community center Downtown",
     type: "food",
-    description: "Almuerzo gratuito para todos",
+    description: "free hot meals for those in need",
   },
   {
     id: "2",
-    title: "Clínica Médica Gratuita",
+    title: "Medical Aid Camp",
     date: "2025-01-26",
     time: "9:00 AM - 4:00 PM",
     location: "Hospital San Diego",
     type: "medical",
-    description: "Chequeos generales y vacunas",
+    description: "basic health check-ups and medicines",
   },
   {
     id: "3",
-    title: "Donación de Ropa de Invierno",
+    title: "Winter Clothing Drive",
     date: "2025-01-27",
     time: "10:00 AM - 5:00 PM",
-    location: "Iglesia del Centro",
+    location: "Shelter Hope",
     type: "clothing",
-    description: "Abrigos, mantas y zapatos",
+    description: "distribution of warm clothes and blankets",
   },
 ]
 
@@ -78,22 +78,22 @@ export function AssistanceHistory() {
           id: "1",
           date: "2025-01-18",
           type: "food",
-          location: "Centro de Esperanza",
-          description: "Desayuno y almuerzo",
+          location: "community kitchen",
+          description: "free lunch service",
         },
         {
           id: "2",
           date: "2025-01-17",
           type: "shelter",
-          location: "Refugio San José",
-          description: "Alojamiento nocturno",
+          location: "shelter San José",
+          description: "overnight stay assistance",
         },
         {
           id: "3",
           date: "2025-01-15",
           type: "clothing",
           location: "Casa de Paz",
-          description: "Abrigo de invierno y zapatos",
+          description: "winter clothes distribution",
         },
       ]
       setRecords(sampleRecords)
@@ -105,25 +105,25 @@ export function AssistanceHistory() {
     <div className="space-y-4 pb-4">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
         <div>
-          <h2 className="text-xl md:text-2xl font-bold text-foreground">Historial de Ayudas</h2>
-          <p className="text-xs md:text-sm text-muted-foreground mt-1">Registro de asistencia recibida</p>
+          <h2 className="text-xl md:text-2xl font-bold text-foreground">Aid History</h2>
+          <p className="text-xs md:text-sm text-muted-foreground mt-1">Regsiter of assistance</p>
         </div>
         <Button size="lg" className="w-full md:w-auto">
           <Plus className="w-5 h-5 mr-2" />
-          Agregar
+          Add
         </Button>
       </div>
 
       <div className="grid grid-cols-2 gap-3">
         <Card className="p-3 md:p-4 text-center">
           <div className="text-2xl md:text-3xl font-bold text-primary">{records.length}</div>
-          <div className="text-xs md:text-sm text-muted-foreground mt-1">Total de ayudas</div>
+          <div className="text-xs md:text-sm text-muted-foreground mt-1">total of help provide</div>
         </Card>
         <Card className="p-3 md:p-4 text-center">
           <div className="text-2xl md:text-3xl font-bold text-accent">
             {records.filter((r) => r.date.startsWith("2025-01")).length}
           </div>
-          <div className="text-xs md:text-sm text-muted-foreground mt-1">Este mes</div>
+          <div className="text-xs md:text-sm text-muted-foreground mt-1">This month</div>
         </Card>
       </div>
 
@@ -131,7 +131,7 @@ export function AssistanceHistory() {
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2">
             <Calendar className="w-5 h-5 md:w-6 md:h-6 text-primary" />
-            <h3 className="font-bold text-base md:text-lg text-foreground">Próximos Eventos de Ayuda</h3>
+            <h3 className="font-bold text-base md:text-lg text-foreground">Upcoming Help Events</h3>
           </div>
           <Button variant="ghost" size="sm" onClick={() => setShowEvents(!showEvents)}>
             {showEvents ? "Ocultar" : "Mostrar"}
@@ -187,16 +187,16 @@ export function AssistanceHistory() {
       {records.length === 0 ? (
         <Card className="p-8 md:p-12 text-center">
           <Package className="w-12 h-12 md:w-16 md:h-16 mx-auto text-muted-foreground mb-4" />
-          <h3 className="text-base md:text-lg font-semibold text-foreground mb-2">No hay registros de ayuda</h3>
-          <p className="text-sm text-muted-foreground mb-4">Comienza a registrar la asistencia que recibes</p>
+          <h3 className="text-base md:text-lg font-semibold text-foreground mb-2">There are no help logs</h3>
+          <p className="text-sm text-muted-foreground mb-4">Start recording the assistance you receive</p>
           <Button>
             <Plus className="w-5 h-5 mr-2" />
-            Agregar Registro
+            Add register
           </Button>
         </Card>
       ) : (
         <div className="space-y-3">
-          <h3 className="font-bold text-base md:text-lg text-foreground">Historial Reciente</h3>
+          <h3 className="font-bold text-base md:text-lg text-foreground">Recent history</h3>
           {records.map((record) => {
             const Icon = typeIcons[record.type]
             return (

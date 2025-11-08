@@ -34,8 +34,8 @@ export function NewsView() {
           <Newspaper className="w-6 h-6 text-primary" />
         </div>
         <div>
-          <h2 className="text-2xl font-bold text-foreground">Noticias y Recursos</h2>
-          <p className="text-sm text-muted-foreground">Información actualizada sobre servicios disponibles</p>
+          <h2 className="text-2xl font-bold text-foreground">News and resoruces</h2>
+          <p className="text-sm text-muted-foreground">Updated information on available services</p>
         </div>
       </div>
 
@@ -78,18 +78,18 @@ export function NewsView() {
       </div>
 
       <Card className="p-6 bg-primary/5 border-primary">
-        <h3 className="font-bold text-lg mb-3 text-foreground">Líneas de Ayuda</h3>
+        <h3 className="font-bold text-lg mb-3 text-foreground">Help lines</h3>
         <div className="space-y-3">
           <div className="flex items-center justify-between p-3 bg-background rounded-lg">
-            <span className="text-sm font-medium text-foreground">Emergencias</span>
+            <span className="text-sm font-medium text-foreground">Emergency</span>
             <span className="text-lg font-bold text-primary">911</span>
           </div>
           <div className="flex items-center justify-between p-3 bg-background rounded-lg">
-            <span className="text-sm font-medium text-foreground">Crisis Mental</span>
+            <span className="text-sm font-medium text-foreground">Mental Crisis</span>
             <span className="text-lg font-bold text-primary">(555) 000-1111</span>
           </div>
           <div className="flex items-center justify-between p-3 bg-background rounded-lg">
-            <span className="text-sm font-medium text-foreground">Información</span>
+            <span className="text-sm font-medium text-foreground">Information</span>
             <span className="text-lg font-bold text-primary">(555) 000-2222</span>
           </div>
         </div>

@@ -14,11 +14,11 @@ export default function HomePage() {
   const [currentView, setCurrentView] = useState<View>("map")
 
   const views = {
-    map: { component: MapView, icon: Map, label: "Mapa" },
-    profile: { component: ProfileView, icon: User, label: "Perfil" },
-    medical: { component: MedicalHistory, icon: Heart, label: "Médico" },
-    assistance: { component: AssistanceHistory, icon: Package, label: "Ayudas" },
-    news: { component: NewsView, icon: Newspaper, label: "Noticias" },
+    map: { component: MapView, icon: Map, label: "Map" },
+    profile: { component: ProfileView, icon: User, label: "Profile" },
+    medical: { component: MedicalHistory, icon: Heart, label: "Medical" },
+    assistance: { component: AssistanceHistory, icon: Package, label: "Help" },
+    news: { component: NewsView, icon: Newspaper, label: "News" },
   }
 
   const CurrentComponent = views[currentView].component
@@ -27,7 +27,7 @@ export default function HomePage() {
     <div className="flex flex-col h-screen bg-background">
       <header className="bg-primary text-primary-foreground p-3 md:p-4 shadow-lg">
         <div className="mx-auto">
-          <h1 className="text-xl md:text-2xl font-bold text-balance">OpenHealth</h1>
+          <h1 className="text-xl md:text-2xl font-bold text-balance">OpenHelp</h1>
           <p className="text-xs md:text-sm opacity-90 mt-1">Find help near you</p>
         </div>
       </header>
