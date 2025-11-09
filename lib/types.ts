@@ -58,3 +58,15 @@ export interface MedicalQRProfile extends UserProfile {
   testResults: string
   advancedDirectives: string
 }
+
+export type WeatherAlert = {
+  id: string
+  title: string
+  severity?: string
+  area?: string
+  starts?: string
+  ends?: string
+  description?: string
+  instruction?: string
+  url?: string
+}
