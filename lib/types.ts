@@ -46,3 +46,15 @@ export interface NewsItem {
   content: string
   link?: string
 }
+
+export interface MedicalQRProfile extends UserProfile {
+  chronicConditions: string
+  medicalHistory: string
+  medications: string
+  allergies: string
+  vaccinations: string
+  familyHistory: string
+  healthContacts: string
+  testResults: string
+  advancedDirectives: string
+}

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Plus, Heart, Pill, AlertCircle, Syringe, Activity, Stethoscope } from "lucide-react"
 import type { MedicalRecord } from "@/lib/types"
+import { MedicalQRForm } from "@/components/ui/medical-qr-form"   // ⬅️ IMPORTANTE
 
 const typeIcons = {
   checkup: Heart,
@@ -15,8 +16,8 @@ const typeIcons = {
 }
 
 const typeLabels = {
-  checkup: "Check",
-  medication: "medication",
+  checkup: "Check-up",
+  medication: "Medication",
   emergency: "Emergency",
   vaccination: "Vaccination",
 }
@@ -42,16 +43,16 @@ export function MedicalHistory() {
           id: "1",
           date: "2025-01-10",
           type: "checkup",
-          description: "general health check-up",
-          provider: "community clinic",
-          notes: "are in good health overall.",
+          description: "General health check-up",
+          provider: "Community Clinic",
+          notes: "Blood pressure normal, overall doing well.",
         },
         {
           id: "2",
           date: "2024-12-15",
           type: "vaccination",
-          description: "Vaccine for influenza",
-          provider: "health department",
+          description: "Influenza vaccine",
+          provider: "Health Center",
         },
       ]
       setRecords(sampleRecords)
@@ -76,14 +77,14 @@ export function MedicalHistory() {
         <Card className="p-3 md:p-4 text-center">
           <Activity className="w-6 h-6 md:w-8 md:h-8 mx-auto text-primary mb-2" />
           <div className="text-xl md:text-2xl font-bold text-foreground">{records.length}</div>
-          <div className="text-xs text-muted-foreground mt-1">Register</div>
+          <div className="text-xs text-muted-foreground mt-1">Records</div>
         </Card>
         <Card className="p-3 md:p-4 text-center">
           <Stethoscope className="w-6 h-6 md:w-8 md:h-8 mx-auto text-primary mb-2" />
           <div className="text-xl md:text-2xl font-bold text-foreground">
             {records.filter((r) => r.type === "checkup").length}
           </div>
-          <div className="text-xs text-muted-foreground mt-1">Check-up</div>
+          <div className="text-xs text-muted-foreground mt-1">Check-ups</div>
         </Card>
         <Card className="p-3 md:p-4 text-center">
           <Syringe className="w-6 h-6 md:w-8 md:h-8 mx-auto text-primary mb-2" />
@@ -97,18 +98,18 @@ export function MedicalHistory() {
           <div className="text-xl md:text-2xl font-bold text-foreground">
             {records.filter((r) => r.type === "medication").length}
           </div>
-          <div className="text-xs text-muted-foreground mt-1">Medicines</div>
+          <div className="text-xs text-muted-foreground mt-1">Medications</div>
         </Card>
       </div>
 
       {records.length === 0 ? (
         <Card className="p-8 md:p-12 text-center">
           <Heart className="w-12 h-12 md:w-16 md:h-16 mx-auto text-muted-foreground mb-4" />
-          <h3 className="text-base md:text-lg font-semibold text-foreground mb-2">There's no medical register</h3>
+          <h3 className="text-base md:text-lg font-semibold text-foreground mb-2">No medical records</h3>
           <p className="text-sm text-muted-foreground mb-4">Start recording your medical care</p>
           <Button>
             <Plus className="w-5 h-5 mr-2" />
-            Add Register
+            Add record
           </Button>
         </Card>
       ) : (
@@ -134,7 +135,7 @@ export function MedicalHistory() {
                       </Badge>
                     </div>
                     <p className="text-xs md:text-sm text-muted-foreground">
-                      {new Date(record.date).toLocaleDateString("es-ES", {
+                      {new Date(record.date).toLocaleDateString("en-US", {
                         year: "numeric",
                         month: "long",
                         day: "numeric",
@@ -152,6 +153,15 @@ export function MedicalHistory() {
           })}
         </div>
       )}
+
+      {/* ✅ QR form section */}
+      <Card className="p-4 md:p-6">
+        <h3 className="font-bold text-base md:text-lg mb-3 text-foreground">Medical Summary QR</h3>
+        <p className="text-xs md:text-sm text-muted-foreground mb-4">
+          Fill out this short form and generate a QR code that medical staff can scan before providing care.
+        </p>
+        <MedicalQRForm />
+      </Card>
 
       <Card className="p-4 md:p-6 bg-accent/10 border-accent">
         <h3 className="font-bold text-base md:text-lg mb-3 text-foreground">Health Reminders</h3>
