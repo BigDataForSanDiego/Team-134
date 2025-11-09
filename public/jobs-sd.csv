@@ -1,0 +1,41 @@
+id,title,company,neighborhood,lat,lng,schedule,payMin,payMax,requiredSkills,niceToHave,tags,description
+1,Kitchen Assistant,Community Kitchens SD,Downtown,32.7157,-117.1611,Day shift,17.25,19.00,cooking;cleaning,customer_service;reliable,Cooking;Food Prep;Entry-level,Helps prepare meals and supports basic food handling and cleaning work
+2,Janitorial Helper,CleanSpaces Co.,Barrio Logan,32.7017,-117.1296,Evening shift,16.75,18.25,cleaning,reliable;punctual;teamwork,Cleaning;Entry-level;Evenings,Provides basic building cleaning and light maintenance work
+3,Cashier,Sunshine Markets,North Park,32.7473,-117.1295,Day shift,16.50,18.25,cashier;customer_service,reliable;friendly;punctual,Customer Service;Cash Handling,Greets customers and runs a simple point of sale system
+4,Landscaping Crew,GreenYards Landscaping,City Heights,32.7479,-117.1031,Day shift,17.50,20.25,landscaping,teamwork;reliable,Outdoor;Physical,Supports yard cleanup raking and simple planting work
+5,Warehouse Associate,SoCal Warehousing,Chollas View,32.7220,-117.0920,Night shift,18.25,21.25,warehouse,stocking;teamwork;reliable,Shifts;Training;Entry-level,Picks and packs items and helps with basic shipping tasks
+6,Hotel Housekeeper,Harborview Hotel,Hillcrest,32.7480,-117.1617,Day shift,17.50,19.50,cleaning,reliable;punctual,Hospitality;Entry-level,Cleans guest rooms and restocks linens and supplies
+7,Dishwasher,Downtown Dishes,Golden Hill,32.7184,-117.1285,Evening shift,16.50,18.00,cleaning,cooking;teamwork,Kitchen;Entry-level,Operates a dish machine and keeps the kitchen area clean
+8,Stocker,Everyday Retail,Kearny Mesa,32.8345,-117.1416,Morning shift,17.00,19.00,stocking;warehouse,reliable,Retail;Backroom,Unpacks deliveries and restocks shelves and storage areas
+9,Event Setup Crew,EventWorks,Pacific Beach,32.8023,-117.2350,Weekends,18.00,22.00,warehouse;teamwork,reliable,Weekends;Physical,Loads unloads and sets up basic equipment for events
+10,Shelter Attendant,Hope Shelter,Encanto,32.7060,-117.0549,Overnight,17.75,20.00,customer_service,reliable;bilingual,Overnight;Entry-level,Supports shelter guests at the front desk and distributes supplies
+11,Barista,BeanCorner Cafe,North Park,32.7473,-117.1295,Morning shift,17.25,19.25,customer_service,cashier;friendly,Food Service;Customer Service,Prepares simple drinks and serves guests at a small coffee counter
+12,Security Guard,SafeWatch SD,Downtown,32.7157,-117.1611,Night shift,19.00,21.50,security;teamwork,reliable;punctual,Safety;Entry-level,Patrols a small area and provides basic safety support for visitors
+13,Reception Clerk,Coastal Motel,Ocean Beach,32.7503,-117.2511,Evening shift,17.00,18.75,customer_service;cashier,bilingual;reliable,Front Desk;Hospitality,Checks guests in and out and handles simple payments
+14,Kitchen Prep,Avenue Kitchen,Golden Hill,32.7184,-117.1285,Day shift,17.00,19.00,cooking;cleaning,teamwork,Food Prep;Entry-level,Preps vegetables and ingredients and keeps work stations clean
+15,Dog Walker,PawsUp Services,Hillcrest,32.7480,-117.1617,Flexible,18.00,22.00,animal_care;reliable,customer_service,Outdoor;Flexible,Walks dogs for local clients and follows simple care instructions
+16,Call Center Agent,VoiceLine Support,Kearny Mesa,32.8345,-117.1416,Day shift,18.00,20.50,customer_service;computer_use,bilingual;friendly,Office;Customer Service,Answers phone calls and provides basic information and support
+17,Line Cook,Taco Town,City Heights,32.7479,-117.1031,Evening shift,18.00,21.00,cooking;teamwork,reliable,Kitchen;Food Prep,Cooks simple menu items on a small line with supervision
+18,Maintenance Helper,FixRight Co.,Barrio Logan,32.7017,-117.1296,Day shift,18.50,21.00,cleaning;repairs,teamwork;reliable,Maintenance;Physical,Assists with basic building repairs and upkeep tasks
+19,Delivery Driver,Speedy SD Logistics,Linda Vista,32.8031,-117.1935,Flexible,19.00,23.00,driving;warehouse,reliable;punctual,Delivery;Logistics,Delivers packages on local routes and helps load vehicles
+20,Warehouse Clerk,LogiCore Distribution,Mission Valley,32.7736,-117.1510,Day shift,18.00,21.00,warehouse;stocking,teamwork;reliable,Inventory;Logistics,Organizes inventory shelves and prepares outgoing orders
+21,Kitchen Assistant,Community Kitchens SD,Barrio Logan,32.7017,-117.1296,Morning shift,17.10,18.90,cooking;cleaning,customer_service;reliable,Cooking;Food Prep;Entry-level,Helps prepare breakfast meals and keeps prep area clean
+22,Janitorial Helper,CleanSpaces Co.,Downtown,32.7157,-117.1611,Night shift,16.80,18.40,cleaning,reliable;teamwork,Cleaning;Entry-level,Performs floor cleaning and trash pickup in common areas
+23,Cashier,Sunshine Markets,City Heights,32.7479,-117.1031,Evening shift,16.60,18.30,cashier;customer_service,reliable;friendly,Customer Service;Retail,Handles simple checkout tasks and greets customers
+24,Landscaping Crew,GreenYards Landscaping,La Jolla,32.8328,-117.2713,Day shift,17.70,20.40,landscaping,teamwork;reliable,Outdoor;Physical,Maintains simple grounds work like raking and trimming
+25,Warehouse Associate,SoCal Warehousing,Kearny Mesa,32.8345,-117.1416,Day shift,18.10,21.10,warehouse,stocking;teamwork,Shifts;Training;Entry-level,Loads pallets and helps move boxes in a small warehouse
+26,Hotel Housekeeper,Harborview Hotel,Pacific Beach,32.8023,-117.2350,Day shift,17.60,19.40,cleaning,reliable;punctual,Hospitality;Entry-level,Cleans guest rooms and replaces towels and simple supplies
+27,Dishwasher,Downtown Dishes,Downtown,32.7157,-117.1611,Night shift,16.55,18.20,cleaning,teamwork,Kitchen;Entry-level,Washes dishes and keeps the dish area organized
+28,Stocker,Everyday Retail,North Park,32.7473,-117.1295,Evening shift,17.05,18.85,stocking;warehouse,reliable,Retail;Backroom,Restocks shelves and organizes simple backroom storage
+29,Event Setup Crew,EventWorks,Ocean Beach,32.7503,-117.2511,Weekends,18.20,21.80,warehouse;teamwork,reliable,Weekends;Physical,Helps set up tables tents and chairs for community events
+30,Shelter Attendant,Hope Shelter,Golden Hill,32.7184,-117.1285,Overnight,17.90,20.10,customer_service,reliable;bilingual,Overnight;Entry-level,Assists guests with simple check in and supply pickup
+31,Barista,BeanCorner Cafe,Hillcrest,32.7480,-117.1617,Morning shift,17.30,19.10,customer_service,cashier;friendly,Food Service;Customer Service,Prepares coffee drinks and small snacks for guests
+32,Security Guard,SafeWatch SD,Mission Valley,32.7736,-117.1510,Evening shift,19.10,21.40,security;teamwork,reliable,Safety;Entry-level,Monitors a small site and checks basic passes and badges
+33,Reception Clerk,Coastal Motel,La Jolla,32.8328,-117.2713,Day shift,17.10,18.90,customer_service;cashier,bilingual,Front Desk;Hospitality,Greets visitors and manages simple front desk tasks
+34,Kitchen Prep,Avenue Kitchen,North Park,32.7473,-117.1295,Evening shift,17.05,18.95,cooking;cleaning,teamwork,Food Prep;Entry-level,Helps chop ingredients and keeps prep tables clean
+35,Dog Walker,PawsUp Services,Pacific Beach,32.8023,-117.2350,Flexible,18.20,22.10,animal_care;reliable,customer_service,Outdoor;Flexible,Walks dogs along simple routes and follows basic care notes
+36,Call Center Agent,VoiceLine Support,City Heights,32.7479,-117.1031,Day shift,18.10,20.40,customer_service;computer_use,friendly,Office;Customer Service,Answers calls and provides simple information from scripts
+37,Line Cook,Taco Town,Barrio Logan,32.7017,-117.1296,Night shift,18.20,21.10,cooking;teamwork,reliable,Kitchen;Food Prep,Cooks simple menu items on grill or flat top
+38,Maintenance Helper,FixRight Co.,Downtown,32.7157,-117.1611,Day shift,18.60,20.90,cleaning;repairs,teamwork;reliable,Maintenance;Physical,Assists with small building fixes and cleaning tasks
+39,Delivery Driver,Speedy SD Logistics,Kearny Mesa,32.8345,-117.1416,Day shift,19.10,22.90,driving;warehouse,reliable;punctual,Delivery;Logistics,Delivers small packages on short local routes
+40,Warehouse Clerk,LogiCore Distribution,Linda Vista,32.8031,-117.1935,Evening shift,18.05,21.05,warehouse;stocking,teamwork;reliable,Inventory;Logistics,Labels boxes and helps keep stock room organized
