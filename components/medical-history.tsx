@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Plus, Heart, Pill, AlertCircle, Syringe, Activity, Stethoscope } from "lucide-react"
 import type { MedicalRecord } from "@/lib/types"
-import { MedicalQRForm } from "@/components/ui/medical-qr-form"   // ⬅️ IMPORTANTE
+import { MedicalQRForm } from "@/components/ui/medical-qr-form"   
 
 const typeIcons = {
   checkup: Heart,
