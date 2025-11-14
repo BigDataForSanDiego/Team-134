@@ -15,7 +15,7 @@ export default function FeelingGrid() {
             rounded-xl 
             shadow 
             hover:shadow-lg 
-            p-6 
+            px-12 py-8    
             flex 
             flex-col 
             items-center 

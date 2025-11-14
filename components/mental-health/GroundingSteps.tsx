@@ -1,33 +1,45 @@
 "use client";
 
 import { useState } from "react";
+import type { CopingStep } from "@/lib/mental-health-data";
 
-const steps = [
-  "Look around and name 5 things you can see.",
-  "Name 4 things you can touch.",
-  "Name 3 things you can hear.",
-  "Name 2 things you can smell.",
-  "Name 1 thing you like about yourself."
-];
+type GroundingStepsProps = {
+  steps: CopingStep[];
+};
 
-export default function GroundingSteps() {
+export default function GroundingSteps({ steps }: GroundingStepsProps) {
   const [index, setIndex] = useState(0);
 
-  return (
-    <div className="text-center w-full">
-      <p className="text-3xl mb-8">{steps[index]}</p>
+  const current = steps[index];
+  const hasNext = index < steps.length - 1;
 
-      {index < steps.length - 1 ? (
-        <button
-          onClick={() => setIndex(index + 1)}
-          className="bg-blue-600 text-white px-8 py-4 rounded-xl text-xl"
-        >
-          Next
-        </button>
-      ) : (
-        <p className="text-xl text-green-700 font-semibold">
-          Well done.
+  const handleNext = () => {
+    if (hasNext) {
+      setIndex((prev) => prev + 1);
+    }
+  };
+
+  return (
+    <div className="w-full flex flex-col items-center">
+      {/* Tarjeta grande y legible */}
+      <div className="w-full max-w-2xl bg-white rounded-3xl shadow-md px-6 md:px-10 py-6 md:py-8">
+        <p className="text-sm md:text-base text-slate-500 mb-4">
+          Step {index + 1} of {steps.length}
         </p>
+
+        <p className="whitespace-pre-line text-lg md:text-2xl text-center leading-relaxed">
+          {current.text}
+        </p>
+      </div>
+
+      {/* Boton NEXT grande (protagonista) */}
+      {hasNext && (
+        <button
+          onClick={handleNext}
+          className="mt-6 w-full max-w-2xl bg-blue-600 hover:bg-blue-700 text-white text-lg md:text-2xl font-semibold py-4 md:py-5 rounded-2xl shadow-md transition-colors"
+        >
+          Next Step
+        </button>
       )}
     </div>
   );

@@ -52,8 +52,7 @@ export default function BetterPage() {
             Do you want to talk to someone real?
           </h1>
           <p className="text-base md:text-xl text-center text-gray-700">
-            You can talk with a real person right now, or go back to the main
-            page.
+            You can talk to a real person right now. Someone who will listen without judging you.
           </p>
         </div>
 
@@ -77,7 +76,7 @@ export default function BetterPage() {
                        hover:-translate-y-1"
           >
             <span className="text-3xl md:text-4xl mr-3">🏠</span>
-            <span className="truncate">No, go back to home</span>
+            <span className="truncate">No, go back to find shelters</span>
           </button>
         </div>
       </div>
