@@ -1,46 +1,42 @@
-# OpenHealth
+### 2025 BIG DATA HACKATHON PROPOSAL FORM
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#### Team Number: `134`  
 
-## Requisitos
+#### Team Name: `OpenHelp`    
 
-- Node.js >= 18.0.0
-- npm >= 8.0.0
+#### Team Coordinator GitHub Username: `Devandress`
 
-**⚠️ IMPORTANTE:** Este proyecto usa **npm** como gestor de paquetes. No uses `yarn`, `pnpm` o `bun`.
+#### Team Members `Fernando Andres Aleman Escobedo - Devandress, Pablo Hernandez Lopez - pablohzdev, Andrick Johab Sandoval Valadez - Andrickjohab12, Hiram Alexis Zuniga Lugo - HiramZ04`
 
-## Getting Started
+#### Your teamâ€™s hackathon idea in One sentence:
+##### `A website to provide support and help to homeless in the United States`
 
-Primero, instala las dependencias:
+#### A visual
+![bigdatahackathon4sd](https://github.com/BigDataForSanDiego/bigdataforsandiego.github.io/blob/main/images/big_data_2025_clip.png?raw=true "Big Data Hackathon for San Diego 2025")
 
-```bash
-npm install
-```
+<img height="10%" width="50%" alt="HDMA" src="https://github.com/BigDataForSanDiego/bigdataforsandiego.github.io/blob/main/templates/img/hdma2.png?raw=true"> 
 
-Luego, ejecuta el servidor de desarrollo:
 
-```bash
-npm run dev
-```
+#### Hackathon Five CORE Themes. `CHECK ONE or TWO QUESTIONS (insert X in [ ])`.
+- [X] Access to Shelter and Resources
+> - Solutions to improve on-demand access and availability of shelters, food banks, medical aid, and social services for homeless individuals.
+> - Question: How can we develop technological solutions that provide real-time, on-demand information updates on available shelters, food banks, hygiene stations, medical clinics, and social services for people experiencing homelessness?
+- [X] Health and Mental Wellness Support
+> - Tools to provide remote mental health support, connect to mobile healthcare providers, or manage chronic conditions common in homeless populations using mobile devices.
+> - Question: How can we create tools or mobile applications that deliver remote mental health care, help manage chronic health conditions, or connect unhoused individuals with trusted health professionals?
+- [ ] Housing and Employment Pathways
+> - Web platforms that connect homeless individuals to affordable housing opportunities, job training programs, or employment resources.
+> - Question: What digital web platforms or systems can help individuals experiencing homelessness navigate the path toward stable housing and employment, including skills training, job placement, and housing referrals? 
+- [ ] Safety and Community Engagement
+> - Solutions to increase personal safety, prevent violence, and foster community support and empathy networks for homeless people.
+> - Question: How might we design technological solutions that improve safety for unhoused individuals, reduce violence, and build empathy and community support through storytelling, social engagement, or civic partnerships?
+- [ ] Data-Driven Policy and User-Centered Resource Planning
+> - Use of geospatial and demographic data to better understand homeless population trends, optimize resource allocation, and support policy advocacy.
+> - Question: How can we use geospatial data, census data, and AI to map trends in homelessness, identify service gaps, and support equitable decision making and public advocacy
+- [ ] Other Possible Topics
+> - Improving digital equity and resource accessibility
+> - Helping youth homelessness and at-risk populations
+> - Providing mobile health clinics and telehealth expansion kits
+> - Increasing climate resilience for unhoused communities
+> - Others
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# OpenHealth" 
