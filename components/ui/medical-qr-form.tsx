@@ -120,7 +120,7 @@ export function MedicalQRForm() {
         <FieldArea
           label="General notes (optional)"
           name="notes"
-          value={form.notes}
+          value={form.notes ?? ""}
           onChange={handleChange}
           placeholder="Any additional relevant info."
         />
