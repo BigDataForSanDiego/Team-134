@@ -1,15 +1,15 @@
 ### 2025 BIG DATA HACKATHON PROPOSAL FORM
 
-#### Team Number: `YOUR TEAM NUMBER HERE`  
+#### Team Number: 134  
 
-#### Team Name: `YOUR TEAM NAME HERE`    
+#### Team Name: Openhelp    
 
-#### Team Coordinator GitHub Username: `YOUR TEAM COORDINATOR GITHUB USERNAME HERE`
+#### Team Coordinator GitHub Username: Devandress
 
-#### Team Members `YOUR TEAM MEMBERS NAME & GITHUB USERNAME HERE`
+#### Team Members `Fernando Andres Aleman Escobedo - Devandress, Pablo Hernandez Lopez - pablohzdev, Andrick Johab Sandoval Valadez - Andrickjohab12, Hiram Alexis Zuniga Lugo - HiramZ04`
 
 #### Your teamâ€™s hackathon idea in One sentence:
-##### `YOUR ONE SENTENCE HERE`
+##### `A website to provide support and help to homeless in the United States`
 
 #### A visual
 ![bigdatahackathon4sd](https://github.com/BigDataForSanDiego/bigdataforsandiego.github.io/blob/main/images/big_data_2025_clip.png?raw=true "Big Data Hackathon for San Diego 2025")
@@ -18,10 +18,10 @@
 
 
 #### Hackathon Five CORE Themes. `CHECK ONE or TWO QUESTIONS (insert X in [ ])`.
-- [ ] Access to Shelter and Resources
+- [X] Access to Shelter and Resources
 > - Solutions to improve on-demand access and availability of shelters, food banks, medical aid, and social services for homeless individuals.
 > - Question: How can we develop technological solutions that provide real-time, on-demand information updates on available shelters, food banks, hygiene stations, medical clinics, and social services for people experiencing homelessness?
-- [ ] Health and Mental Wellness Support
+- [X] Health and Mental Wellness Support
 > - Tools to provide remote mental health support, connect to mobile healthcare providers, or manage chronic conditions common in homeless populations using mobile devices.
 > - Question: How can we create tools or mobile applications that deliver remote mental health care, help manage chronic health conditions, or connect unhoused individuals with trusted health professionals?
 - [ ] Housing and Employment Pathways
@@ -39,4 +39,7 @@
 > - Providing mobile health clinics and telehealth expansion kits
 > - Increasing climate resilience for unhoused communities
 > - Others
+
+
+
 
