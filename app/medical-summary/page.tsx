@@ -1,10 +1,12 @@
 "use client"
 
+import { Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import { Card } from "@/components/ui/card"
 import type { MedicalQRProfile } from "@/lib/types"
 
-export default function MedicalSummaryPage() {
+// Componente que usa useSearchParams debe estar dentro de Suspense
+function MedicalSummaryContent() {
   const searchParams = useSearchParams()
   const data = searchParams.get("data")
 
@@ -69,9 +71,25 @@ export default function MedicalSummaryPage() {
       <Section title="Healthcare contacts (clinics / doctors)" value={profile.healthContacts} />
       <Section title="Relevant test results & procedures" value={profile.testResults} />
       <Section title="Advance directives / living will" value={profile.advancedDirectives} />
-
       {profile.notes && <Section title="Additional notes" value={profile.notes} />}
     </div>
+  )
+}
+
+// Componente principal exportado con Suspense
+export default function MedicalSummaryPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="max-w-xl mx-auto p-4">
+          <Card className="p-4">
+            <p className="text-sm text-muted-foreground">Loading medical summary...</p>
+          </Card>
+        </div>
+      }
+    >
+      <MedicalSummaryContent />
+    </Suspense>
   )
 }
 

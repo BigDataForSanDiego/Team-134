@@ -330,7 +330,7 @@ export function MapView() {
                       centerLng: shelter.lng,
                       zoom: Math.max(mapState.zoom, 15),
                     })
-                    if (window.innerWidth < 768) {
+                     if (window.innerWidth < 768) {
                       setIsSidebarOpen(false)
                     }
                   }}
