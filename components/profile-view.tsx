@@ -40,7 +40,7 @@ export function ProfileView() {
             <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
               <User className="w-7 h-7 md:w-8 md:h-8 text-primary" />
             </div>
-            <div>
+            <div className="flex-1">
               <h2 className="text-xl md:text-2xl font-bold text-foreground">Profile</h2>
               <p className="text-xs md:text-sm text-muted-foreground">Personal Information</p>
             </div>
